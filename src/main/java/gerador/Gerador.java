@@ -39,8 +39,8 @@ public class Gerador {
 	 * Cria gerador padrão. Embora todas as seqüências sejam geradas, nenhuma
 	 * operação é estabelecida para cada seqüência.
 	 *
-	 * @param szSeq
-	 * @param szDom
+	 * @param szSeq jogo
+	 * @param szDom dezenas
 	 */
 	public Gerador(int szSeq, int szDom) {
 		this(new UsaSequencia() {
@@ -53,8 +53,8 @@ public class Gerador {
 	 * Cria gerador com sequência definida.
 	 *
 	 * @param us sequência
-	 * @param szSeq
-	 * @param szDom
+	 * @param szSeq jogo
+	 * @param szDom dezenas
 	 */
 	public Gerador(UsaSequencia us, int szSeq, int szDom) {
 		super();
@@ -70,7 +70,7 @@ public class Gerador {
 	/**
 	 * Faz uma cópia do array v para o array copiaV, que é externamente visível.
 	 *
-	 * @return copiaV
+	 * @return cópia do array v.
 	 */
 	private int[] copiaSequencia() {
 		System.arraycopy(v, 1, copiaV, 0, copiaV.length);
